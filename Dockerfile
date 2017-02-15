@@ -1,12 +1,21 @@
 FROM ubuntu:xenial
 
-RUN apt-get update -y
-RUN apt-get install -y apt-utils
-RUN apt-get install -y gcc
-RUN apt-get install -y cmake
-RUN apt-get install -y libuv1-dev
-RUN apt-get install -y libprotobuf-dev
-RUN apt-get install -y python3-dev
-RUN apt-get install -y python3-pip
-RUN pip3 install --upgrade pip
-RUN pip3 install --upgrade cloudpickle protobuf pytest pytest-timeout bokeh matplotlib sphinx-rtd-theme flake8
+RUN apt-get update -y && apt-get install -y \
+    apt-utils \
+    gcc \
+    cmake \
+    libuv1-dev \
+    libprotobuf-dev \
+    python3-dev \
+    python3-pip
+
+RUN pip3 install --upgrade \
+    pip \
+    cloudpickle \
+    protobuf \
+    pytest \
+    pytest-timeout \
+    bokeh \
+    matplotlib \
+    sphinx-rtd-theme \
+    flake8 \
