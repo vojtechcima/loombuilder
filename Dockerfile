@@ -5,6 +5,7 @@ RUN apt-get update -y && apt-get install -y \
     gcc \
     cmake \
     libuv1-dev \
+    protobuf-compiler \
     libprotobuf-dev \
     python3-dev \
     python3-pip
