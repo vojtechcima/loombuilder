@@ -28,3 +28,5 @@ RUN cd ~ && \
     make install && \
     cd python && \
     python3 setup.py install
+
+RUN ldconfig
