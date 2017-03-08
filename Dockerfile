@@ -16,6 +16,7 @@ RUN pip3 install --upgrade \
     pytest-timeout \
     bokeh \
     matplotlib \
+    sphinx \
     sphinx-rtd-theme \
     flake8
 
