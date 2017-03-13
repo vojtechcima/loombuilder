@@ -7,7 +7,8 @@ RUN apt-get update -y && apt-get install -y \
     libuv1-dev \
     python3-dev \
     python3-pip \
-    wget
+    wget \
+    openssh-client
 
 RUN pip3 install --upgrade \
     pip \
