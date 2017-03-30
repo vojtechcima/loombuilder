@@ -15,6 +15,7 @@ RUN pip3 install --upgrade \
     cloudpickle \
     pytest \
     pytest-timeout \
+    pandas \
     bokeh \
     matplotlib \
     sphinx \
